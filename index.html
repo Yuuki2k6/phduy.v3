@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portfolio.</title>
+    <link rel="icon" type="image/jpg" href="assets/logo.jpg"/>
+    <script src="script.js"></script>
+  </head>
+
+  <style>
+    /* width */
+    ::-webkit-scrollbar {
+      width: 8px;
+      border-radius: 1px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #fff; 
+      border-radius: 1px;
+
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #faccb7; 
+      border-radius: 1px;
+
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover 
+    {
+      background: #be405c;
+    }
+
+</style>
+
+  <body>
+    
+    <div class="header">
+      <div class="logo" id="header_logo">
+         <a               class="lg" id="header_a_logo"></a>&NonBreakingSpace;<a href="#a3k55" class="ji" id="header_a_join"></a>
+      </div>
+    </div> 
+    <div class="nav">
+      <div class="nav__content">
+        <div class="logo"><span style="color: #ffffff"><b>DXY.</b></span></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a style="--i:1;" class="active" target="_blank" href="https://www.facebook.com/sakurajima.maiuwu15/"><i class='bx bxl-facebook'></i></a></li>
+          <li><a style="--i:2;" target="_blank" href="https://www.instagram.com/yuuki2k6.aep/"><i class='bx bxl-instagram'></i></a></li>
+          <li><a style="--i:3;" target="_blank" href="https://www.youtube.com/@duynquwu0212"><i class='bx bxl-youtube'></i></a></li>
+          <li><a style="--i:5;" target="_blank" href="https://github.com/yuuki2k6"><i class='bx bxl-github'></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="section__container">
+        <div class="content">
+          <h1>Hi, I'm Nguyen Le Phuoc <span style="color: #faccb7">Duy</span></h1>
+          <h3><span style="color: #be405c">A3K55</span> | THPT Chuyen Dai Hoc Vinh</h3>
+          <p>Thanks for taking time to come here. This website is <span style="color: #faccb7">weeb-friendly</span> with aesthetic design and a simple pallete as well as an <span style="color: #faccb7">anime</span> background. Feel free to look around although I haven't made any special features though.</p>
+          <a href="https://youtu.be/dQw4w9WgXcQ?si=_P48pitxAZ8TFJHg" class="btn2">Who am I?</a>
+        <div class="image">
+          <img src="assets/home.jpg" alt="home-img"/>
+        </div>
+      </div>
+    </section>
+
+    <section class="section2" id="a3k55">
+      <div class="section2_container">
+        <div class="content2">
+          <h1><span style="color: #faccb7">MUSIC </span><span style="color: #ffffff">TO MY EARS:</span></h1>
+          <iframe class="player" src="https://www.youtube.com/embed/1Mmd2yKm_hU?si=zVcFaWTl2BZ7uRZI?autoplay=1" title="YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function()
+        {
+            var div = document.querySelector("nav");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+
+  </body>
+</html>
