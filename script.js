@@ -20,13 +20,13 @@ var x = setInterval(function()
     var minutes_during = Math.floor((time_diff_during % (1000 * 60 * 60)) / (1000 * 60));
     var seconds_during = Math.floor((time_diff_during % (1000 * 60)) / 1000);
 
-    var before_string = new String(" Special event: " + days_before + " ngày, " + hours_before + " giờ " + minutes_before + " phút " + seconds_before + " giây.");
-    var during_string = new String("Góc hảo tâm: " + hours_during + " giờ " + minutes_during + " phút " + seconds_during)
+    var before_string = new String(" Birthday countdown: " + days_before + " ngày, " + hours_before + " giờ " + minutes_before + " phút " + seconds_before + " giây.");
+    /* var during_string = new String("Góc hảo tâm: " + hours_during + " giờ " + minutes_during + " phút " + seconds_during) */
 
     // header_a_logo, header_a_join
     if (time_diff_before >= 0 && time_diff_during >= 0){
         document.getElementById("header_a_logo").innerHTML = before_string;
-        document.getElementById("header_a_join").innerHTML = "Donate";
+        /* document.getElementById("header_a_join").innerHTML = "Donate"; */
     }
     if (time_diff_before < 0 && time_diff_during >= 0){
         document.getElementById("header_a_logo").innerHTML = during_string;
