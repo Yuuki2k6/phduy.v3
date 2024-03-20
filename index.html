@@ -10,6 +10,7 @@
     <title>Portfolio.</title>
     <link rel="icon" type="image/jpg" href="assets/logo.jpg"/>
     <script src="script.js"></script>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=PCV9aDzn8iIjuKzGVw8sqlqWt_hwvMjUHbj3RSRhndP_V-H4KiSgcD0CBZK_764vdsnrAGrvSoWDQ96vRwC4QQ" charset="UTF-8"></script>
   </head>
 
   <style>
@@ -65,7 +66,7 @@
     </div>
 
     <section class="section">
-      <div class="section__container">
+      <div class="section__container" id="myContainer1">
         <div class="content">
           <h1>Hi, I'm Nguyen Le Phuoc <span style="color: #faccb7">Duy</span></h1>
           <h3><span style="color: #be405c">A3K55</span> | THPT Chuyen Dai Hoc Vinh</h3>
@@ -75,15 +76,37 @@
           <img src="assets/home.jpg" alt="home-img"/>
         </div>
       </div>
+      <script>
+        window.addEventListener('scroll', function() {
+            var section__container = document.getElementById('myContainer1');
+            var scrollPosition = window.scrollY + window.innerHeight;
+            var section__container = section__container.offsetTop;
+            
+            if (scrollPosition > section__containerPosition) {
+              section__container.classList.add('show4');
+            }
+        });
+    </script>
     </section>
 
     <section class="section2" id="a3k55">
-      <div class="section2_container">
+      <div class="section2_container" id="myContainer2">
         <div class="content2">
           <h1><span style="color: #be405c">MUSIC </span><span style="color: #ffffff">TO MY <span style="color: #faccb7">EARS:</span></span></h1>
           <iframe class="player" src="https://www.youtube.com/embed/1Mmd2yKm_hU?si=zVcFaWTl2BZ7uRZI?autoplay=1" title="YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
+      <script>
+        window.addEventListener('scroll', function() {
+            var section2_container = document.getElementById('myContainer2');
+            var scrollPosition = window.scrollY + window.innerHeight;
+            var section2_containerPosition = section2_container.offsetTop;
+            
+            if (scrollPosition > section2_containerPosition) {
+              section2_container.classList.add('show');
+            }
+        });
+    </script>
     </section>
 
     <script type="text/javascript" src="script.js"></script>
