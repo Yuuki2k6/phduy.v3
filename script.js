@@ -9,8 +9,6 @@ var x = setInterval(function()
     var time_diff_before = time_before - time_now,
         time_diff_during = time_during - time_now;
 
-    // this fucking takes time ts could be done with struct and defined operator in c++
-    // and i dont wanna use typescript wallahi ffs
     var days_before = Math.floor(time_diff_before / (1000 * 60 * 60 * 24));
     var hours_before = Math.floor((time_diff_before % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes_before = Math.floor((time_diff_before % (1000 * 60 * 60)) / (1000 * 60));
