@@ -160,8 +160,8 @@ body {
 .nav__content {
   font-size: larger;
   max-width: var(--max-width);
-  margin: auto;
-  padding: 18px 0px;
+  margin: auto; 
+  padding: 18px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
