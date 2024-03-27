@@ -124,7 +124,6 @@
           </ul>
       </div>
       </div>
-
       <script src="slide.js"></script>
     </section>
 
@@ -142,6 +141,138 @@
           }
         })
     </script>
+
+  <div class="footer">
+    <div class="w-full h-auto bg-[#272723] p-8 pt-16 sm:p-16 sm:pb-0">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid footer_left md:grid-cols-2 lg:grid-cols-4">
+          <div class="pb-12 mx-4 col-1">
+            <div class="text-lg font-semibold text-white uppercase">Middle of Nowhere</div>
+            <div class="flex text-[#757575] mt-4">
+              <div class="w-6 h-6">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="flex-1 block ml-4">
+                <div class="font-medium text-white uppercase text-md">Cơ sở 1</div>
+                <div class="font-medium text-md">Nhà 9, ngõ 6, đường Nguyễn Thị Minh Khai - Vinh - Nghệ An</div>
+              </div>
+            </div>
+            <div class="flex text-[#757575] mt-4">
+              <div class="w-6 h-6">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="flex-1 block ml-4">
+                <div class="font-medium text-white uppercase text-md">Cơ sở 2</div>
+                <div class="font-medium text-md">12 Trần Huy Liệu - Vinh - Nghệ An</div>
+              </div>
+            </div>
+            <hr class="w-42 text-[#757575] mt-4">
+            <div class="flex text-[#757575] mt-4">
+              <i class="fa-solid fa-phone"></i>
+              <div class="flex-1 block ml-4">
+                <div class="font-medium text-white uppercase text-md">Điện Thoại</div>
+                <div class="font-medium text-md">0967115914</div>
+              </div>
+            </div>
+            <hr class="w-42 text-[#757575] mt-4">
+            <div class="flex text-[#757575] mt-4">
+              <div class="w-6 h-6">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="flex-1 block ml-4">
+                <div class="font-medium text-white uppercase text-md">Email</div>
+                <div class="font-medium text-md"><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                    data-cfemail="a6c8c1d3dfc3c8c2d3c5d2c9c7c8c2ced0e6c1cbc7cfca88c5c9cb">[email&#160;protected]</a></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="p-8 social_network sm:p-0 sm:mx-8">
+            <div class="mb-8 text-lg font-semibold text-white uppercase">Liên hệ</div>
+            <a href="https://www.facebook.com/tmathcoding/" target="_blank">
+              <div class="flex mt-2 cursor-pointer">
+                <img class="w-6 h-6" src="/static/img/facebook.svg" alt>
+                <div class="ml-2 font-semibold text-white">Facebook</div>
+              </div>
+            </a>
+            <a href="https://www.facebook.com/tmathcoding/" target="_blank">
+              <div class="flex mt-4 cursor-pointer">
+                <img class="w-6 h-6" src="/static/img/messenger.svg" alt>
+                <div class="ml-2 font-semibold text-white">Messenger</div>
+              </div>
+            </a>
+            <div class="flex mt-4 cursor-pointer">
+              <img class="w-6 h-6" src="/static/img/zalo.svg" alt>
+              <div class="ml-2 ">
+                <div class="font-semibold text-white">0967115914</div>
+              </div>
+            </div>
+            <div class="flex mt-4 cursor-pointer">
+              <img class="w-6 h-6" src="/static/img/zalo.svg" alt>
+              <div class="ml-2 ">
+                <div class="font-semibold text-white">0967115914</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 1,
+      loop: true,
+      pagination: {
+        el: '.pagination',
+        clickable: true,
+        dynamicBullets: true,
+      },
+
+      spaceBetween: 15,
+      breakpoints: {
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        } 
+      }
+    })
+    var element = document.getElementById("classes");
+  </script>
+
+  <script>
+    /*==================== SCROLL REVEAL ANIMATION ====================*/
+    const sr = ScrollReveal({
+      distance: '30px',
+      duration: 2000,
+      reset: true
+    });
+
+    sr.reveal(`.reveal__top`, {
+      origin: 'top',
+      interval: 100,
+    })
+
+    sr.reveal(`.reveal__left`, {
+      origin: 'left',
+      interval: 100,
+    })
+
+    sr.reveal(`.reveal__right`, {
+      origin: 'right',
+      interval: 100,
+    })
+
+    function Feedback() {
+      let element = document.getElementById("write_feedback");
+      element.classList.remove("hidden");
+    }
+
+    function CloseFeedback() {
+      let element = document.getElementById("write_feedback");
+      element.classList.add("hidden");
+    }
+  </script>
 
   </body>
 </html>
